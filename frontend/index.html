@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styling/index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+
+            <div class="nav">
+
+                <div class="navleft">
+                    <span><ion-icon id="logoicon" name="location"></ion-icon></span>
+                    <h1>Tripify</h1>
+                </div>
+
+                <div class="navright">
+                    <div class="dropdown1">
+                        <span class="tagname">Inspiration</span>
+                        <div class="dropdown1-content">
+                            <button>visit singapore</button>
+                            <button>Resorts World Sentosa</button>
+                            <button>Weekend Guide</button>
+                            <button>Beaches</button>
+                            <button>Mountain</button>
+                            <button>Heritage</button>
+                            <button>visit singapore</button>
+                            <button>Honeymoon Packages</button>
+                            <button>WildLife Tourism</button>
+                            <button>Road Trips</button>
+                            <button>Luxury Travels</button>
+                            <button>Explore More</button>
+                        </div>
+                    </div>
+
+                    <span class="tagname">Forum</span>
+
+                    <span class="tagname">Packages</span>
+
+                    <div class="dropdown1">
+                        <span class="tagname">Publish Trip</span>
+                        <div class="dropdown1-content">
+                            <button>Create New</button>
+                            <button>Upload Photos</button>
+                            <button>Import Blog</button>
+                        </div>
+                    </div>
+
+                    <div class="dropdown1">
+                        <span><ion-icon id="hamburger1" name="menu-outline"></ion-icon></span>
+                        <div class="dropdown1-content">
+                            <button>Sign in</button>
+                            <button>Log in</button>
+                            <button>Import Blog</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <h1>India's Largest Community of Travellers</h1>
+
+            <form id="content">
+                <input type="text" name="input" class="input" id="search-input">
+                <button type="reset" class="search" id="search-btn"></button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+<script>
+    const input = document.getElementById("search-input");
+    const searchBtn = document.getElementById("search-btn");
+
+    const expand = () => {
+        searchBtn.classList.toggle("close");
+        input.classList.toggle("square");
+    };
+
+    searchBtn.addEventListener("click", expand);
+</script>
+
+</html>
