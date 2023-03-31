@@ -8,6 +8,14 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./styling/index.css">
+
+    <!-- box animation -->
+    <link rel="stylesheet" href="./styling/boxAnimation.css">
+
+    <!-- google signs -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -74,13 +82,115 @@
                 <button type="reset" class="search" id="search-btn"></button>
             </form>
         </div>
+        
+        <div id="container-movies">
+
+            <div class="container-movie">
+                <div class="movie">
+    
+                    <div class="movie-inside front">
+                        <div class="blur">
+                            <img src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_8280_202301231315_Kufri_pic_2.jpg?time=1677177521" alt="">
+                            <span class="blurry" style="background-image: url(https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_8280_202301231315_Kufri_pic_2.jpg?time=1677177521)"></span>
+                            <div class="overlay">
+                                <div class="flex">
+                                    <p>Find some beautifull place to get</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="movie-inside back">
+                        <div class="movie-details">
+                            <div class="movie-snap"><img src="https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/02/Shimla.jpg"></div>
+                            <h1>Shimla<br><span>4 Days-3 Nights</span></h1>
+                            <ul class="movie-tags">
+                                <li><a href="#">Treking</a></li>
+                                <li><a href="#">para-Liding</a></li>
+                            </ul>
+                            <p class="movie-synopsis">The charming countryside of Rajasthan at Chandsen Eco Dera has more to offer than you can ever imagine.</p>
+                            <button class="detialsBtn">See Details</button>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="container-movie">
+                <div class="movie">
+    
+                    <div class="movie-inside front">
+                        <div class="blur">
+                            <img src="https://img.freepik.com/premium-photo/portrait-smiling-woman-looking-canal-with-gandola-summer-vacation_259348-5480.jpg?w=2000" style="height: 400px
+                            ; width: 300px;" alt="">
+                            <span class="blurry2" style="background-image: url(https://img.freepik.com/premium-photo/portrait-smiling-woman-looking-canal-with-gandola-summer-vacation_259348-5480.jpg?w=2000); height: 100px;"></span>
+                            <div class="overlay2">
+                                <div class="flex">
+                                    <p>Some Refreshness in charming city</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="movie-inside back">
+                        <div class="movie-details">
+                            <div class="movie-snap"><img src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/filestore/evnzjyw4w6ua21gylhjbwqr2sooi_1580307315_shutterstock_77676271.jpg"></div>
+                            <h1>France<br><span>7Days-6Nights</span></h1>
+                            <ul class="movie-tags">
+                                <li><a href="#">Charming</a></li>
+                                <li><a href="#">Scenery</a></li>
+                            </ul>
+                            <p class="movie-synopsis">If your idea of paradise is lush mountains</p>
+                            <button class="detialsBtn">See Details</button>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="container-movie">
+                <div class="movie">
+    
+                    <div class="movie-inside front">
+                        <div class="blur">
+                            <img src="https://explora.mu/media/k2/items/cache/e1e1ad60f07c4aa3ccbcb2973e9d7007_XL.jpg?t=20220114_101524" style="height: 400px; width: 310px;" alt="">
+                            <span class="blurry" style="background-image: url(https://explora.mu/media/k2/items/cache/e1e1ad60f07c4aa3ccbcb2973e9d7007_XL.jpg?t=20220114_101524); height: 100px;"></span>
+                            <div class="overlay">
+                                <div class="flex">
+                                    <p>Let the Waves hit your feet, and the sand be your seat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="movie-inside back">
+                        <div class="movie-details">
+                            <div class="movie-snap"><img src="https://d1l3wviaauwkfu.cloudfront.net/2021/11/Milaidhoo_Maldives_Batheli_By_The_Reef__10_-1920.jpg"></div>
+                            <h1>Rogue one<br><span>2016 - 2h13</span></h1>
+                            <ul class="movie-tags">
+                                <li><a href="#">Lavish Hotel</a></li>
+                                <li><a href="#">Scenic Meals</a></li>
+                            </ul>
+                            <p class="movie-synopsis">Former scientist Galen Erso lives on a farm with his wife and young daughter, Jyn</p>
+                            <button class="detialsBtn">See Details</button>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 <script>
+
+    //search button
     const input = document.getElementById("search-input");
     const searchBtn = document.getElementById("search-btn");
 
@@ -88,8 +198,8 @@
         searchBtn.classList.toggle("close");
         input.classList.toggle("square");
     };
-
     searchBtn.addEventListener("click", expand);
+
 </script>
 
 </html>
