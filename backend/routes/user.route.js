@@ -14,6 +14,7 @@ userRouter.post("/register", async (req, res) => {
                 let payload = await new UserModel({ Fullname, email, pass: hash, contact })
                 try {
                     await payload.save() 
+                    res.send({"msg": "registered successfully"})
                 } catch (error) {
                     res.status(400).send(error.message)
                 }
