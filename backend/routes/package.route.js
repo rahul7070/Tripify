@@ -7,8 +7,9 @@ const packageRouter = express.Router();
 
 //get
 packageRouter.get("/",async (req, res)=>{
+    let {page} = req.query
     try {
-        let dataarr = await PackageModel.find();
+        let dataarr = await PackageModel.find().skip((page)*4).limit(4);
         res.send(dataarr)
     } catch (error) {
         res.send({"msg": error.msg})

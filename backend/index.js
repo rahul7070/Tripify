@@ -1,5 +1,6 @@
 const express = require("express");
 const { connection } = require("./db");
+const cors = require("cors")
 const { auth } = require("./middlewares/auth.middleware");
 const { packageRouter } = require("./routes/package.route");
 const { picsRouter } = require("./routes/pics.route");
@@ -12,6 +13,7 @@ app.get("/", (req, res)=>{
     res.send("hello world")
 })
 
+app.use(cors())
 app.use(express.json())
 app.use("/users", userRouter)
 app.use("/packages", packageRouter)
