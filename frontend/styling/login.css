@@ -165,3 +165,18 @@ a{color:inherit;text-decoration:none}
 color: #b3b3b3;
 } 
 
+#closebtn{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: none;
+	font-size: 15px;
+	border-radius: 50%;
+	border-color: grey;
+}
+#closebtn:hover{
+	cursor: pointer;
+	background-color: grey;
+}
+
+

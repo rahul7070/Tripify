@@ -1,0 +1,44 @@
+body{
+    /* background-image: url(../images/booking.jpg);
+     */
+     background-color: rgb(51, 50, 50);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainForm{
+    /* border: 1px solid rgb(11, 218, 233); */
+    margin-top: 20px;
+    width: 60%;
+    margin: auto;
+    /* text-align: center; */
+    background-color: rgb(10, 114, 173);
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 50px;
+    color: rgb(15, 14, 14);
+    font-weight: bolder;
+}
+.mainForm h1{
+    text-align: center;
+}
+form>*{
+    display: block;
+    margin: 20px;
+    text-align: center;
+    font-weight:bolder;
+}
+input{
+    width: 500px;
+    padding: 10px;
+    border: 2px solid rgb(33, 145, 209);
+    border-radius: 5px;
+}
+select{
+    background-color: rgb(219, 211, 211);
+    width: 200px;
+}
+form #submit{
+    background-color: crimson;
+    width: 100px;
+    border: none;
+}

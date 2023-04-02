@@ -250,7 +250,8 @@ input {
     width: 98%;
     margin: auto;
 }
-.cardsCont h1{
+
+.cardsCont h1 {
     margin-left: 80px;
 }
 
@@ -277,20 +278,22 @@ input {
     object-fit: cover;
     width: 100%;
 }
-.cardsWrapper .card #days{
+
+.cardsWrapper .card #days {
     font-size: larger;
     background-color: rgb(48, 124, 238);
     padding: 5px;
     border-radius: 15px;
     color: white;
 }
-.cardsWrapper .card #number{
+
+.cardsWrapper .card #number {
     color: rgb(48, 124, 238);
-    font-size: 15px ;
+    font-size: 15px;
     font-weight: bolder;
 }
 
-.toolsCont .paginationBtn{
+.toolsCont .paginationBtn {
     height: 60px;
     width: 120px;
     position: relative;
@@ -300,10 +303,11 @@ input {
     border: none;
 }
 
-.toolsCont .paginationBtn:hover{
+.toolsCont .paginationBtn:hover {
     cursor: pointer;
     background-color: rgb(82, 79, 79);
 }
+
 .toolsCont .arrow {
     border: solid rgb(243, 237, 237);
     border-width: 0 3px 3px 0;
@@ -319,4 +323,159 @@ input {
 .toolsCont .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+}
+
+
+
+/* uttrakhand poster */
+.poster {
+    position: relative;
+    top: 550px;
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.poster img {
+    display: block;
+    width: 90%;
+    margin: auto;
+    /* height: 350px; */
+}
+
+.poster img:hover {
+    cursor: pointer;
+    width: 91%;
+
+}
+
+
+/* internation tour cardswrapper */
+.international_cont {
+    /* border: 1px solid black; */
+    position: relative;
+    top: 550px;
+    margin: auto;
+    width: 85%;
+    margin: auto;
+}
+
+.cardsWrapper2 {
+    /* border: 1px solid red; */
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2);
+    gap: 25px;
+}
+
+.cardsWrapper2 .card {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.cardsWrapper2 .card img {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.cardsWrapper2 .card h1 {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.cardsWrapper2 .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+/* footer */
+.footer-clean {
+    position: relative;
+    top: 600px;
+    padding: 100px;
+    background-color: #212121 !important;
+}
+
+.footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+}
+
+.footer-clean .item.social {
+    text-align: right;
+}
+
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+.footer-clean .item.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social>a:hover {
+    opacity: 0.9;
+}
+
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.row {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2;
+    gap: 20px;
+}
+.footer-clean *{
+    color:  white;
 }
