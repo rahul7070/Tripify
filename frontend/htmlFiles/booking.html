@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styling/booking.css">
+</head>
+
+<body>
+    <div class="mainForm">
+        <h1>Enter Your Details and Proceed to Book</h1>
+        <div class="cont">
+            <form id="bookingFrom">
+                Email: <input type="email" id="email" placeholder="Enter your Email">
+                Full Name: <input type="text" id="fullname" placeholder="Full name">
+                Contact: <input type="number" id="contact" placeholder="Contact Number">
+                Departure From<input type="text" id="depart" placeholder="Departure City">
+                Reach To<input type="text" id="dest" placeholder="Destination">
+                Adults: <input type="number" id="adult" placeholder="No. of adults">
+                Children :<input type="number" id="child" placeholder="No. of Children">
+                Room Category: <select name="Select Room" id="roomType">
+                    <option value="Single Bedroom">Single Bedroom</option>
+                    <option value="Double Bedroom">Double Bedroom</option>
+                    <option value="Single Bedroom">Triple Bedroom</option>
+                </select>
+                Date :<input type="date" id="date" placeholder="Check-in-date">
+                <h3 id="Amount"></h3>
+                <p>Taxes and discounts are calculated at checkout</p>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="../javascript.js/booking.page.js"></script>
+
+</html>

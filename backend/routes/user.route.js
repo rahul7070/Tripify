@@ -14,16 +14,16 @@ userRouter.post("/register", async (req, res) => {
                 let payload = await new UserModel({ Fullname, email, pass: hash, contact })
                 try {
                     await payload.save() 
-                    res.send({"msg": "registered successfully"})
+                    res.json({"msg": "registered successfully"})
                 } catch (error) {
-                    res.status(400).send(error.message)
+                    res.status(400).json(error.message)
                 }
             } else {
-                res.status(400).send(error.message)
+                res.status(400).json(error.message)
             }
         })
     } catch (error) {
-        res.status(400).send(error)
+        res.status(400).json(error)
     }
 })
 
@@ -35,7 +35,7 @@ userRouter.post("/login", async (req, res) => {
             bcrypt.compare(pass, obj.pass, function (err, result) {
                 // result == true
                 if (result) {
-                    res.send({ "msg": "login success", token: jwt.sign({ "userID": obj._id }, "rahul") })
+                    res.send({ "msg": "login success", token: jwt.sign({ "userID": obj._id }, "rahul"), "Fullname":obj.Fullname, "email":obj.email, "contact": obj.contact })
                 } else {
                     res.send({ "msg": "wrong password" })
                 }
