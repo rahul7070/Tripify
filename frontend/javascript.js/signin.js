@@ -1,7 +1,7 @@
 let baseURL = `http://localhost:7900`
 
 let Fullname = document.getElementById("fullname")
-let email = document.querySelector("#email")
+let email = document.querySelector("#registeremail")
 let contact = document.querySelector("#mobile")
 let registerpass = document.querySelector("#registerpass")
 let confirmpass = document.querySelector("#confirmpass")
@@ -9,12 +9,12 @@ let confirmpass = document.querySelector("#confirmpass")
 let registerBtn = document.querySelector("#registerBtn")
 
 registerBtn.addEventListener("click", ()=>{
-    if(!Fullname.value || !email.value || !contact.value || !registerpass.value || !confirmpass.value || registerpass.value!=confirmpass.value){
-        alert("fill correct credentials")
-    }else{
-        registration();
-    }
-    // registration()
+    // if(!Fullname.value || !email.value || !contact.value || !registerpass.value || !confirmpass.value || registerpass.value!=confirmpass.value){
+    //     alert("fill correct credentials")
+    // }else{
+    //     registration();
+    // }
+    registration()
 })
 async function registration(){
     // console.log(Fullname.value)
